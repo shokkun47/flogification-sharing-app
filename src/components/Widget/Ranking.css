@@ -1,0 +1,32 @@
+/* src/components/Widget/Ranking.css */
+.ranking {
+    padding: 10px;
+    background-color: white;
+    /* border-radius: 10px; */
+    margin-top: 20px;
+    border-top: 1px solid var(--twitter-background);
+  }
+  
+  .ranking--section {
+    background-color: #f5f8fa;
+    border: 1px solid #e1e8ed;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .ranking--section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #4CAF50; /* 淡い緑色に変更 */
+  }
+  
+  .ranking--section ol {
+    padding-left: 20px;
+  }
+  
+  .ranking--section li {
+    margin-bottom: 5px;
+    color: black; /* 黒文字に変更 */
+  }
+  

@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* 背景を白に設定 */
+  }
+  
+  .loginPage {
+    display: flex;
+    height: 100vh;
+    background-color: #ffffff; /* 全体の背景を白に設定 */
+    align-items: center;
+  }
+  
+  .loginPage__imageContainer {
+    flex: 2; /* 画像コンテナの比率を大きくする */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loginPage__image {
+    max-width: 100%; /* 画像をさらに大きくする */
+    max-height: 100%;
+    margin-right: 0px;
+    margin-left: 115px;
+  }
+  
+  .loginForm {
+    flex: 1; /* フォームコンテナの比率を小さくする */
+    display: flex;
+    justify-content: flex-start; /* フォームを左寄せに配置 */
+    align-items: center;
+    padding-left: 50px; /* フォームと左端の間に余白を追加 */
+  }
+  
+  .loginForm__container {
+    text-align: center;
+    width: 100%;
+  }
+  
+  .loginForm__title {
+    font-size: 32px; /* 文字を大きくする */
+    margin-bottom: 20px;
+    color: #333;
+    white-space: nowrap; /* 文字を改行せず一行にする */
+  }
+  
+  .loginForm__title span {
+    color: #4CAF50; /* もう少し緑に変更 */
+  }
+  
+  .loginForm__subtitle {
+    font-size: 20px; /* 文字を大きくする */
+    margin-bottom: 30px;
+    color: #555;
+  }
+  
+  .loginForm__button {
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    padding: 15px 30px; /* ボタンを大きくする */
+    font-size: 20px; /* 文字を大きくする */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .loginForm__button:hover {
+    background-color: #357ae8;
+  }
+  

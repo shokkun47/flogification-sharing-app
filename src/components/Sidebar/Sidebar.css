@@ -1,0 +1,46 @@
+.sidebar {
+  border-right: 1px solid var(--twitter-background);
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  flex: 0.2;
+  min-width: 250px;
+  margin-top: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.sidebar--flogIcon {
+  height: 50px;
+  width: 5opx;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.sidebar__options {
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.sidebar--tweet {
+  background-color: var(--twitter-color) !important;
+  color: white !important;
+  font-weight: 900 !important;
+  border: none !important;
+  border-radius: 30px !important;
+  height: 50px !important;
+  margin-top: 20px !important;
+}
+
+.sidebar--logout {
+  background-color: #ff4d4d !important;
+  color: white !important;
+  font-weight: 900 !important;
+  border: none !important;
+  border-radius: 30px !important;
+  height: 50px !important;
+  margin-top: 20px !important;
+}
+
+

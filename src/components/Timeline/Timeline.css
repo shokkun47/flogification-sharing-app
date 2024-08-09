@@ -1,0 +1,39 @@
+.timeline {
+    flex: 0.6;
+    overflow: hidden;
+    overflow-y: hidden; 
+    border-right: 1px solid var(--twitter-background);
+  }
+  
+  .timeline::-webkit-scrollbar {
+    display: none;
+}
+
+  .timeline--header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+    padding-left: 20px !important;
+    border-bottom: 1px solid var(--twitter-background);
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+  }
+  
+  .timeline--tweetButton {
+    margin-left: auto;
+    margin-right: 10px;
+    color: #fff !important;
+    background-color: #4CAF50 !important;
+    border-radius: 20px !important;
+    padding: 10px 20px !important;
+    text-transform: none !important;
+    font-weight: bold !important;
+  }
+  
+  .timeline--tweetButton:hover {
+    background-color: #134d15 !important;
+  }
+  

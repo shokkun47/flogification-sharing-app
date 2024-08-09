@@ -1,0 +1,24 @@
+/* src/components/Ranking/Ranking.css */
+.ranking {
+    margin-top: 20px;
+    padding: 10px;
+    border-top: 1px solid var(--twitter-background);
+  }
+  
+  .ranking h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .ranking ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .ranking li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid var(--twitter-background);
+  }
+  

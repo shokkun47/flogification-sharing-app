@@ -1,0 +1,34 @@
+/* src/components/Widget/Widgets.css */
+.widgets {
+    flex: 0.3;
+    padding: 19px;
+    background-color: white;
+    /* border-radius: 20px; */  
+    border-top: 1px solid var(--twitter-background);
+
+  }
+  
+  .widgets--input {
+    display: flex;
+    align-items: center;
+    background-color: var(--twitter-background);
+    padding: 10px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .widgets--searchIcon {
+    color: gray;
+  }
+  
+  .widgets--input input {
+    border: none;
+    background: none;
+    outline: none;
+    padding-left: 10px;
+  }
+  
+  .widgets--widgetContainer {
+    margin-top: 15px;
+  }
+  
