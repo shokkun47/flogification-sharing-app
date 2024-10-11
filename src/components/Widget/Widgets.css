@@ -1,16 +1,63 @@
 /* src/components/Widget/Widgets.css */
 .widgets {
   flex: 0.3;
-  padding: 19px 0 19px 0; /* 左右のパディングを削除 */
+  padding: 19px 0;
   background-color: white;
-  border-top: 1px solid var(--twitter-background);
+  /* border-top: 1px solid var(--twitter-background); */
   margin-right: 20px;
 }
 
 /* スマホ画面用スタイル */
 @media only screen and (max-width: 600px) {
   .widgets {
-      display: none;
+    display: none; /* デフォルトで非表示 */
+  }
+  
+  /* ボタンで表示時に適用 */
+  .widgets.show {
+    display: block; /* 表示 */
+    margin: 10px; /* スマホ画面に合わせたスタイル調整 */
+  }
+
+  .widgets-toggleButton {
+    position: fixed; /* 画面右下に固定 */
+    bottom: 20px; /* 下から20pxの位置 */
+    right: 20px; /* 右から20pxの位置 */
+    background-color: #4CAF50; /* ボタンの色を緑色に変更 */
+    color: white; /* テキストの色を白に設定 */
+    width: 70px; /* 円形にするための幅を大きく設定 */
+    height: 70px; /* 円形にするための高さを大きく設定 */
+    border: none;
+    border-radius: 50%; /* 完全な円形にする */
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* タイムラインの上に重ねる */
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none; /* フォーカス時のアウトラインを無効にする */
+    transition: none; /* クリック時のエフェクトを無効にする */
+    user-select: none; /* テキスト選択を無効にする */
+    font-size: 10px; /* テキストを小さくしてボタン内に収める */
+    padding: 5px; /* テキストの余白を調整 */
+  }
+
+  .widgets-toggleButton:active,
+  .widgets-toggleButton:focus {
+    background-color: #4CAF50; /* アクティブ時も背景色を変えない */
+    outline: none; /* アウトラインを無効にする */
+  }
+}
+
+/* デフォルトではパソコン画面で表示 */
+@media only screen and (min-width: 601px) {
+  .widgets {
+    display: block;
+  }
+
+  .widgets-toggleButton {
+    display: none; /* パソコン画面ではボタン非表示 */
   }
 }
 
@@ -20,7 +67,7 @@
   background-color: var(--twitter-background);
   padding: 10px;
   border-radius: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   margin-left: 20px;
   margin-right: 20px;
 }
