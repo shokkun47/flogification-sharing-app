@@ -51,7 +51,7 @@ function TweetBox() {
           className="tweetBox--placeInput"
           displayEmpty
         >
-          <MenuItem value=""><em>場所を選択してください</em></MenuItem>
+          <MenuItem value=""><em>蛙化した場所は？</em></MenuItem>
           <MenuItem value="家">家</MenuItem>
           <MenuItem value="お店">お店</MenuItem>
           <MenuItem value="車">車</MenuItem>

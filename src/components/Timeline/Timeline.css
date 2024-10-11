@@ -1,7 +1,7 @@
 .timeline {
     flex: 0.6;
     overflow: hidden;
-    overflow-y: hidden; 
+    overflow-y: hidden;
     border-right: 1px solid var(--twitter-background);
   }
   
